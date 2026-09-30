@@ -6,6 +6,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initNavbar();
+  initHeroSlider();
   init3DTilt();
   initScrollAnimations();
   initCounters();
@@ -336,4 +337,70 @@ function showToast(element, message, type) {
   setTimeout(() => {
     element.className = 'alert d-none';
   }, 5000);
+}
+
+/* --------------------------------------------------------------------------
+   10. Animated Spatial Hero Slider Carousel
+   -------------------------------------------------------------------------- */
+function initHeroSlider() {
+  const slides = document.querySelectorAll('.hero-slider-item');
+  const dots = document.querySelectorAll('.hero-indicator-dot');
+  const prevBtn = document.querySelector('.hero-prev-btn');
+  const nextBtn = document.querySelector('.hero-next-btn');
+
+  if (!slides.length) return;
+
+  let currentIndex = 0;
+  let autoSlideTimer = null;
+
+  const goToSlide = (index) => {
+    slides.forEach((slide, i) => {
+      if (i === index) {
+        slide.classList.add('active');
+      } else {
+        slide.classList.remove('active');
+      }
+    });
+
+    dots.forEach((dot, i) => {
+      if (i === index) {
+        dot.classList.add('active');
+      } else {
+        dot.classList.remove('active');
+      }
+    });
+
+    currentIndex = index;
+  };
+
+  const nextSlide = () => {
+    const nextIndex = (currentIndex + 1) % slides.length;
+    goToSlide(nextIndex);
+  };
+
+  const prevSlide = () => {
+    const prevIndex = (currentIndex - 1 + slides.length) % slides.length;
+    goToSlide(prevIndex);
+  };
+
+  if (nextBtn) nextBtn.addEventListener('click', () => { nextSlide(); resetTimer(); });
+  if (prevBtn) prevBtn.addEventListener('click', () => { prevSlide(); resetTimer(); });
+
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      goToSlide(i);
+      resetTimer();
+    });
+  });
+
+  const startTimer = () => {
+    autoSlideTimer = setInterval(nextSlide, 5000);
+  };
+
+  const resetTimer = () => {
+    clearInterval(autoSlideTimer);
+    startTimer();
+  };
+
+  startTimer();
 }
