@@ -17,7 +17,8 @@ A premium, modern, visually immersive, and animated website for **Zayaura Develo
   - `index.html` (Homepage with Hero, Stats, Services, Editorial Portfolio, Interactive Dual Slider, Process Timeline, Quick View Modal)
   - `about.html` (Studio Story, Manifesto, Client Stories & Testimonials)
   - `services.html` (Architecture, Interior Design, Design & Build, Renovation)
-  - `projects.html` (Filterable portfolio with asymmetric editorial grid)
+  - `projects.html` (Full portfolio showcasing client works)
+  - `process.html` (Dedicated 5-step process page, 45-day delivery guarantee, 15-year warranty, free 3D design & site visit assessment)
   - `project-detail.html` (Individual project showcase, concept narrative, specs, and gallery)
   - `contact.html` (Interactive consultation form with JS validation, HQ details, direct WhatsApp link, embedded map)
 - **Accessibility & Responsive Design**: Designed across 1920px down to 375px mobile viewports with full `@media (prefers-reduced-motion: reduce)` support.
