@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects Portfolio — Zayaura Developers</title>
+  <meta name="description" content="Explore our completed architecture, luxury interior, villa design, and commercial projects for clients including Joy Abraham, Shihab, Denny, and more.">
+  <link rel="canonical" href="projects.html">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <!-- GSAP Animation Engine -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Sticky Glass Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top glass-nav py-3" id="mainNavbar">
+      <div class="container-fluid px-lg-5">
+        <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+          <img src="images/logos/WhatsApp Image 2026-09-30 at 14.03.06.jpeg" alt="Zayaura Logo" height="42" class="rounded-1">
+          <div class="brand-text">
+            <span class="d-block font-heading fs-4 fw-semibold tracking-tight text-uppercase lh-1" style="letter-spacing: 0.15em;">ZAYAURA</span>
+            <span class="d-block text-uppercase text-muted" style="font-size: 0.65rem; letter-spacing: 0.3em;">DEVELOPERS</span>
+          </div>
+        </a>
+
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+          <i class="bi bi-list fs-1 text-heading"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-4 text-uppercase" style="font-size: 0.8125rem; letter-spacing: 0.15em;">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link active text-accent fw-semibold" href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#process">Process</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
+            <button class="theme-toggle-btn" aria-label="Toggle Theme">
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+            <a href="contact.html" class="btn btn-editorial btn-primary-custom">Start a Project</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main style="padding-top: 120px;">
+    <!-- Header -->
+    <section class="py-5 bg-surface border-bottom">
+      <div class="container py-lg-4">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end reveal-fade-up">
+          <div>
+            <span class="eyebrow">PORTFOLIO</span>
+            <h1 class="display-1 font-heading mb-2">Selected Architectural Works</h1>
+            <p class="lead text-muted mb-0">Showcasing custom residences, luxury interiors, and commercial developments for our clients.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="py-5">
+      <div class="container py-lg-4">
+        <div class="row g-4 reveal-stagger-grid" id="projectsGrid">
+
+          <!-- 01: Client Joy Abraham -->
+          <div class="col-md-6 col-lg-6 project-item" data-category="residential interior">
+            <div class="project-card floating-card">
+              <div class="project-img-wrapper">
+                <img src="images/Joy Abraham/WhatsApp Image 2026-09-30 at 14.19.23.jpeg" alt="Joy Abraham Residence">
+              </div>
+              <div class="project-overlay">
+                <div class="d-flex justify-content-between align-items-end">
+                  <div>
+                    <span class="project-category">Client: Joy Abraham • Residential Interior</span>
+                    <h3 class="project-title font-heading">Abraham Villa Sanctuary</h3>
+                    <p class="text-white-50 small mb-0">Kochi, Kerala • 2026</p>
+                  </div>
+                  <a href="project-detail.html?client=joy-abraham" class="project-link-icon border-0 text-decoration-none">
+                    <i class="bi bi-arrow-up-right fs-5"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 02: Client Shihab -->
+          <div class="col-md-6 col-lg-6 project-item" data-category="residential interior architecture">
+            <div class="project-card floating-card">
+              <div class="project-img-wrapper">
+                <img src="images/shihab/WhatsApp Image 2026-09-30 at 14.20.40.jpeg" alt="Shihab Residence">
+              </div>
+              <div class="project-overlay">
+                <div class="d-flex justify-content-between align-items-end">
+                  <div>
+                    <span class="project-category">Client: Shihab • Luxury Villa & Interior</span>
+                    <h3 class="project-title font-heading">Shihab Architectural Villa</h3>
+                    <p class="text-white-50 small mb-0">Thrissur, Kerala • 2026</p>
+                  </div>
+                  <a href="project-detail.html?client=shihab" class="project-link-icon border-0 text-decoration-none">
+                    <i class="bi bi-arrow-up-right fs-5"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 03: Client Denny -->
+          <div class="col-md-6 col-lg-7 project-item" data-category="commercial architecture">
+            <div class="project-card floating-card">
+              <div class="project-img-wrapper">
+                <img src="images/denny/WhatsApp Image 2026-09-30 at 14.22.38.jpeg" alt="Denny Commercial Complex">
+              </div>
+              <div class="project-overlay">
+                <div class="d-flex justify-content-between align-items-end">
+                  <div>
+                    <span class="project-category">Client: Denny • Commercial Architecture</span>
+                    <h3 class="project-title font-heading">Denny Corporate Plaza</h3>
+                    <p class="text-white-50 small mb-0">Calicut, Kerala • 2026</p>
+                  </div>
+                  <a href="project-detail.html?client=denny" class="project-link-icon border-0 text-decoration-none">
+                    <i class="bi bi-arrow-up-right fs-5"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 04: Site Master Project Casa Verde -->
+          <div class="col-md-6 col-lg-5 project-item" data-category="residential architecture">
+            <div class="project-card floating-card">
+              <div class="project-img-wrapper portrait">
+                <img src="images/site/WhatsApp Image 2026-09-29 at 18.03.33.jpeg" alt="Casa Verde Sanctuary">
+              </div>
+              <div class="project-overlay">
+                <div class="d-flex justify-content-between align-items-end">
+                  <div>
+                    <span class="project-category">Architectural Build • Tropical Villa</span>
+                    <h3 class="project-title font-heading">Casa Verde Sanctuary</h3>
+                    <p class="text-white-50 small mb-0">Ernakulam, Kerala • 2026</p>
+                  </div>
+                  <a href="project-detail.html?client=casa-verde" class="project-link-icon border-0 text-decoration-none">
+                    <i class="bi bi-arrow-up-right fs-5"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 05: Joy Abraham Secondary Suite -->
+          <div class="col-md-6 col-lg-5 project-item" data-category="interior residential">
+            <div class="project-card floating-card">
+              <div class="project-img-wrapper portrait">
+                <img src="images/Joy Abraham/WhatsApp Image 2026-09-30 at 14.19.24.jpeg" alt="Joy Abraham Lounge">
+              </div>
+              <div class="project-overlay">
+                <div class="d-flex justify-content-between align-items-end">
+                  <div>
+                    <span class="project-category">Client: Joy Abraham • Private Suite</span>
+                    <h3 class="project-title font-heading">Abraham Executive Lounge</h3>
+                    <p class="text-white-50 small mb-0">Kochi, Kerala • 2026</p>
+                  </div>
+                  <a href="project-detail.html?client=joy-abraham" class="project-link-icon border-0 text-decoration-none">
+                    <i class="bi bi-arrow-up-right fs-5"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 06: Shihab Gallery Space -->
+          <div class="col-md-6 col-lg-7 project-item" data-category="interior architecture">
+            <div class="project-card floating-card">
+              <div class="project-img-wrapper">
+                <img src="images/shihab/WhatsApp Image 2026-09-30 at 14.20.41.jpeg" alt="Shihab Atrium Space">
+              </div>
+              <div class="project-overlay">
+                <div class="d-flex justify-content-between align-items-end">
+                  <div>
+                    <span class="project-category">Client: Shihab • Double-Height Atrium</span>
+                    <h3 class="project-title font-heading">Shihab Atrium & Foyer</h3>
+                    <p class="text-white-50 small mb-0">Thrissur, Kerala • 2026</p>
+                  </div>
+                  <a href="project-detail.html?client=shihab" class="project-link-icon border-0 text-decoration-none">
+                    <i class="bi bi-arrow-up-right fs-5"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Consultation CTA -->
+    <section class="py-5 collaborate-section text-white text-center">
+      <div class="container py-lg-4 reveal-fade-up">
+        <span class="eyebrow text-accent-light">START YOUR PROJECT</span>
+        <h2 class="display-2 font-heading text-white mb-4">Want your residence featured in our portfolio?</h2>
+        <a href="contact.html" class="btn btn-editorial btn-primary-custom me-sm-3 mb-3 mb-sm-0">Book Studio Discussion</a>
+        <a href="https://wa.me/918089944873" target="_blank" class="btn btn-editorial btn-outline-custom text-white border-white"><i class="bi bi-whatsapp me-2"></i> WhatsApp Us</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/918089944873" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark text-white border-top border-secondary border-opacity-10">
+    <div class="container py-lg-4">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <img src="images/logos/WhatsApp Image 2026-09-30 at 14.03.06.jpeg" alt="Zayaura Logo" height="36" class="rounded-1">
+            <span class="font-heading fs-4 text-white text-uppercase" style="letter-spacing: 0.15em;">ZAYAURA</span>
+          </div>
+          <p class="text-white-50 small mb-4">
+            Zayaura Developers is an architectural and interior design firm dedicated to creating spatial experiences defined by elegance, material honesty, and precision engineering.
+          </p>
+          <div class="d-flex gap-3">
+            <a href="https://www.instagram.com/zayauradevelopers?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" class="text-white-50 text-decoration-none fs-5" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/people/Zayaura-Developers/61594051868736/?ref=PROFILE_EDIT_xav_ig_profile_page_web#" target="_blank" class="text-white-50 text-decoration-none fs-5" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white-50 text-decoration-none fs-5" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="text-white-50 text-decoration-none fs-5" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5 class="font-heading text-white mb-3" style="font-size: 1.1rem;">Navigation</h5>
+          <ul class="list-unstyled small text-white-50 d-flex flex-column gap-2">
+            <li><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
+            <li><a href="about.html" class="text-white-50 text-decoration-none">About Us</a></li>
+            <li><a href="services.html" class="text-white-50 text-decoration-none">Services</a></li>
+            <li><a href="projects.html" class="text-white-50 text-decoration-none">Projects</a></li>
+            <li><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h5 class="font-heading text-white mb-3" style="font-size: 1.1rem;">Services</h5>
+          <ul class="list-unstyled small text-white-50 d-flex flex-column gap-2">
+            <li><a href="services.html" class="text-white-50 text-decoration-none">Residential Architecture</a></li>
+            <li><a href="services.html" class="text-white-50 text-decoration-none">Luxury Interior Design</a></li>
+            <li><a href="services.html" class="text-white-50 text-decoration-none">Design & Build Execution</a></li>
+            <li><a href="services.html" class="text-white-50 text-decoration-none">Commercial Hubs</a></li>
+            <li><a href="services.html" class="text-white-50 text-decoration-none">Full Home Renovation</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h5 class="font-heading text-white mb-3" style="font-size: 1.1rem;">Studio Contact</h5>
+          <p class="text-white-50 small mb-2"><i class="bi bi-geo-alt text-accent me-2"></i> Door No. X111/458, Sunu Plaza, Near Kottaram Temple, Maradu, Kochi</p>
+          <p class="text-white-50 small mb-2"><i class="bi bi-telephone text-accent me-2"></i> +91 8089944873 / +91 9048888166</p>
+          <p class="text-white-50 small mb-2"><i class="bi bi-envelope text-accent me-2"></i> zayauradevelopers@gmail.com</p>
+          <p class="text-white-50 small mb-0"><i class="bi bi-clock text-accent me-2"></i> Mon - Sat: 9:00 AM - 6:00 PM</p>
+        </div>
+      </div>
+
+      <div class="border-top border-secondary border-opacity-25 mt-5 pt-4 d-flex flex-column flex-md-row justify-content-between text-white-50 small">
+        <p class="mb-0">&copy; 2026 Zayaura Developers. All Rights Reserved.</p>
+        <p class="mb-0">Designed by byteboot</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

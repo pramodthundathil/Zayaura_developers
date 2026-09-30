@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zayaura Developers — Luxury Architecture & Interior Design Studio</title>
+  <meta name="description" content="Zayaura Developers is a premier architecture and interior design firm specializing in high-end residential, commercial, luxury villas, and design-build projects.">
+  <meta name="keywords" content="Architecture, Interior Design, Luxury Villas, Commercial Architecture, Design Build, Kochi, Kerala, Zayaura Developers">
+  <meta name="author" content="Zayaura Developers">
+  <link rel="canonical" href="index.html">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <!-- GSAP Animation Engine -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Sticky Glass Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top glass-nav py-3" id="mainNavbar">
+      <div class="container-fluid px-lg-5">
+        <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+          <img src="images/logos/WhatsApp Image 2026-09-30 at 14.03.06.jpeg" alt="Zayaura Logo" height="42" class="rounded-1">
+          <div class="brand-text">
+            <span class="d-block font-heading fs-4 fw-semibold tracking-tight text-uppercase lh-1" style="letter-spacing: 0.15em;">ZAYAURA</span>
+            <span class="d-block text-uppercase text-muted" style="font-size: 0.65rem; letter-spacing: 0.3em;">DEVELOPERS</span>
+          </div>
+        </a>
+
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-1 text-heading"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-4 text-uppercase" style="font-size: 0.8125rem; letter-spacing: 0.15em;">
+            <li class="nav-item"><a class="nav-link active text-accent fw-semibold" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#process">Process</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
+            <button class="theme-toggle-btn" aria-label="Toggle Light/Dark Theme">
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+            <a href="contact.html" class="btn btn-editorial btn-primary-custom">Start a Project</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-overlay" style="background-image: url('images/site/WhatsApp Image 2026-09-29 at 18.03.42.jpeg');"></div>
+      <div class="hero-gradient-overlay"></div>
+      
+      <div class="container hero-content py-5">
+        <div class="row min-vh-75 align-items-center">
+          <div class="col-lg-9 col-xl-8 reveal-fade-up">
+            <div class="hero-badge mb-4">
+              <i class="bi bi-compass"></i> ARCHITECTURE & INTERIOR STUDIO
+            </div>
+            <h1 class="display-1 font-heading text-white fw-light mb-4" style="line-height: 1.08;">
+              Designing Spaces. <br><span class="italic-serif text-accent" style="font-style: italic;">Defining Experiences.</span>
+            </h1>
+            <p class="lead text-white-50 mb-5 pe-lg-5">
+              We craft bespoke architectural landmarks and tailored spatial interiors that harmonize functionality, material luxury, and human emotion.
+            </p>
+            <div class="d-flex flex-column flex-sm-row gap-3">
+              <a href="projects.html" class="btn btn-editorial btn-primary-custom">
+                Explore Projects <i class="bi bi-arrow-right"></i>
+              </a>
+              <a href="contact.html" class="btn btn-editorial btn-outline-custom text-white border-white">
+                Start a Conversation
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Floating Statistics Counter Bar -->
+    <section class="container position-relative">
+      <div class="stats-bar floating-card reveal-fade-up">
+        <div class="row text-center g-4">
+          <div class="col-6 col-md-3">
+            <div class="stat-number" data-count="15">0+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-number" data-count="120">0+</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-number" data-count="45">0+</div>
+            <div class="stat-label">Happy Clients</div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-number" data-count="12">0+</div>
+            <div class="stat-label">Design Awards</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Studio Introduction Section -->
+    <section class="py-5 my-5" id="intro">
+      <div class="container py-lg-5">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 reveal-fade-up">
+            <span class="eyebrow">ABOUT ZAYAURA</span>
+            <h2 class="display-2 font-heading mb-4">Architecture as a dialogue between light, context & life.</h2>
+            <p class="lead mb-4">
+              At Zayaura Developers, we believe that great architecture is not merely about erecting structures—it is about sculpting experiences that inspire and endure.
+            </p>
+            <p class="text-muted mb-4">
+              From high-end private residences and contemporary luxury villas to commercial offices and hospitality developments, our design-build studio integrates visionary spatial planning with rigorous craftsmanship.
+            </p>
+            <div class="pt-2">
+              <a href="about.html" class="text-accent fw-semibold text-uppercase tracking-wider text-decoration-none" style="letter-spacing: 0.15em; font-size: 0.875rem;">
+                Learn More About Our Philosophy <i class="bi bi-arrow-right ms-2"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-lg-6 reveal-fade-up">
+            <div class="spatial-perspective">
+              <div class="floating-card rounded-2 overflow-hidden shadow-lg border">
+                <img src="images/site/WhatsApp Image 2026-09-29 at 18.03.37.jpeg" alt="Zayaura Architectural Studio Work" class="img-fluid w-100 object-fit-cover" style="height: 480px;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Services Section -->
+    <section class="py-5 bg-surface" id="services" style="background-color: rgba(28,28,28,0.02);">
+      <div class="container py-lg-5">
+        <div class="text-center max-w-700 mx-auto mb-5 reveal-fade-up">
+          <span class="eyebrow">WHAT WE DO</span>
+          <h2 class="display-2 font-heading">Our Design & Build Expertise</h2>
+          <p class="text-muted">Comprehensive architectural and interior solutions tailored from concept to handover.</p>
+        </div>
+
+        <div class="row g-4 reveal-stagger-grid">
+          <div class="col-md-6 col-lg-3">
+            <div class="service-card floating-card">
+              <div class="service-num">01</div>
+              <h3 class="h4 font-heading mb-3">Architecture</h3>
+              <p class="text-muted small mb-4">Residential villas, commercial structures, master planning, 3D visualization & architectural documentation.</p>
+              <a href="services.html" class="text-accent text-decoration-none fw-semibold small text-uppercase" style="letter-spacing: 0.1em;">Explore Architecture <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="service-card floating-card">
+              <div class="service-num">02</div>
+              <h3 class="h4 font-heading mb-3">Interior Design</h3>
+              <p class="text-muted small mb-4">Luxury residential interiors, modern workspace environments, retail concepts, custom cabinetry & lighting.</p>
+              <a href="services.html" class="text-accent text-decoration-none fw-semibold small text-uppercase" style="letter-spacing: 0.1em;">Explore Interiors <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="service-card floating-card">
+              <div class="service-num">03</div>
+              <h3 class="h4 font-heading mb-3">Design & Build</h3>
+              <p class="text-muted small mb-4">Turnkey project management, contractor coordination, material procurement & site supervision.</p>
+              <a href="services.html" class="text-accent text-decoration-none fw-semibold small text-uppercase" style="letter-spacing: 0.1em;">Explore Design & Build <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="service-card floating-card">
+              <div class="service-num">04</div>
+              <h3 class="h4 font-heading mb-3">Renovation</h3>
+              <p class="text-muted small mb-4">Structural transformations, villa remodeling, kitchen & bathroom upgrades, commercial refits.</p>
+              <a href="services.html" class="text-accent text-decoration-none fw-semibold small text-uppercase" style="letter-spacing: 0.1em;">Explore Renovation <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Editorial Portfolio -->
+    <section class="py-5" id="projects">
+      <div class="container py-lg-5">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5 reveal-fade-up">
+          <div>
+            <span class="eyebrow">PORTFOLIO</span>
+            <h2 class="display-2 font-heading mb-0">Featured Works</h2>
+          </div>
+        </div>
+
+        <!-- Asymmetric Editorial Grid -->
+        <div class="row g-4 reveal-stagger-grid" id="portfolioGrid">
+
+          <!-- Project 01 -->
+          <div class="col-md-6 col-lg-7 project-item" data-category="architecture residential">
+            <div class="project-card floating-card">
+              <div class="project-img-wrapper">
+                <img src="images/site/WhatsApp Image 2026-09-29 at 18.03.33.jpeg" alt="Casa Verde Villa">
+              </div>
+              <div class="project-overlay">
+                <div class="d-flex justify-content-between align-items-end">
+                  <div>
+                    <span class="project-category">Residential Architecture • Kochi, Kerala</span>
+                    <h3 class="project-title font-heading">Casa Verde Sanctuary</h3>
+                  </div>
+                  <button class="project-link-icon border-0 quick-view-btn" 
+                          data-bs-toggle="modal" 
+                          data-bs-target="#projectQuickViewModal"
+                          data-title="Casa Verde Sanctuary"
+                          data-category="Residential Architecture"
+                          data-location="Kochi, Kerala"
+                          data-image="images/site/WhatsApp Image 2026-09-29 at 18.03.33.jpeg"
+                          data-desc="A serene tropical modern villa engineered with passive cooling, natural stone finishes, and floor-to-ceiling glass integration.">
+                    <i class="bi bi-arrow-up-right fs-5"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 02 -->
+          <div class="col-md-6 col-lg-5 project-item" data-category="interior residential">
+            <div class="project-card floating-card">
+              <div class="project-img-wrapper portrait">
+                <img src="images/Joy Abraham/WhatsApp Image 2026-09-30 at 14.19.23.jpeg" alt="Abraham Luxury Residence">
+              </div>
+              <div class="project-overlay">
+                <div class="d-flex justify-content-between align-items-end">
+                  <div>
+                    <span class="project-category">Luxury Interior • Ernakulam</span>
+                    <h3 class="project-title font-heading">Abraham Residence</h3>
+                  </div>
+                  <button class="project-link-icon border-0 quick-view-btn" 
+                          data-bs-toggle="modal" 
+                          data-bs-target="#projectQuickViewModal"
+                          data-title="Abraham Luxury Residence"
+                          data-category="Luxury Interior"
+                          data-location="Ernakulam"
+                          data-image="images/Joy Abraham/WhatsApp Image 2026-09-30 at 14.19.23.jpeg"
+                          data-desc="Refined interior spatial layout featuring custom oak cabinetry, recessed warm architectural lighting, and bespoke Italian marble flooring.">
+                    <i class="bi bi-arrow-up-right fs-5"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 03 -->
+          <div class="col-md-6 col-lg-5 project-item" data-category="commercial architecture">
+            <div class="project-card floating-card">
+              <div class="project-img-wrapper portrait">
+                <img src="images/denny/WhatsApp Image 2026-09-30 at 14.22.38.jpeg" alt="Denny Commercial Complex">
+              </div>
+              <div class="project-overlay">
+                <div class="d-flex justify-content-between align-items-end">
+                  <div>
+                    <span class="project-category">Commercial Architecture • Calicut</span>
+                    <h3 class="project-title font-heading">Denny Corporate Hub</h3>
+                  </div>
+                  <button class="project-link-icon border-0 quick-view-btn" 
+                          data-bs-toggle="modal" 
+                          data-bs-target="#projectQuickViewModal"
+                          data-title="Denny Corporate Hub"
+                          data-category="Commercial Architecture"
+                          data-location="Calicut"
+                          data-image="images/denny/WhatsApp Image 2026-09-30 at 14.22.38.jpeg"
+                          data-desc="State-of-the-art commercial complex featuring energy-efficient glass curtain walls, open atrium spaces, and collaborative work zones.">
+                    <i class="bi bi-arrow-up-right fs-5"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 04 -->
+          <div class="col-md-6 col-lg-7 project-item" data-category="interior commercial">
+            <div class="project-card floating-card">
+              <div class="project-img-wrapper">
+                <img src="images/shihab/WhatsApp Image 2026-09-30 at 14.20.40.jpeg" alt="Shihab Executive Suite">
+              </div>
+              <div class="project-overlay">
+                <div class="d-flex justify-content-between align-items-end">
+                  <div>
+                    <span class="project-category">Interior Design • Thrissur</span>
+                    <h3 class="project-title font-heading">Shihab Luxury Suite</h3>
+                  </div>
+                  <button class="project-link-icon border-0 quick-view-btn" 
+                          data-bs-toggle="modal" 
+                          data-bs-target="#projectQuickViewModal"
+                          data-title="Shihab Luxury Suite"
+                          data-category="Interior Design"
+                          data-location="Thrissur"
+                          data-image="images/shihab/WhatsApp Image 2026-09-30 at 14.20.40.jpeg"
+                          data-desc="Editorial workspace interior incorporating bronze metallic accents, acoustic wood paneling, and ergonomically tailored lounge seating.">
+                    <i class="bi bi-arrow-up-right fs-5"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="projects.html" class="btn btn-editorial btn-outline-custom">
+            View Complete Portfolio <i class="bi bi-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dual-State Interactive Interactive Architectural Showcase -->
+    <section class="py-5 bg-surface" id="showcase">
+      <div class="container py-lg-5">
+        <div class="text-center max-w-700 mx-auto mb-5 reveal-fade-up">
+          <span class="eyebrow">DESIGN TRANSFORMATION</span>
+          <h2 class="display-2 font-heading">From Concept to Reality</h2>
+          <p class="text-muted">Drag the interactive slider to explore the seamless transition from architectural framework to finished luxury space.</p>
+        </div>
+
+        <div class="dual-state-container rounded-2 reveal-fade-up">
+          <div class="dual-state-before" style="background-image: url('images/site/WhatsApp Image 2026-09-29 at 18.03.43.jpeg');"></div>
+          <div class="dual-state-after" style="background-image: url('images/site/WhatsApp Image 2026-09-29 at 18.03.39.jpeg');"></div>
+          <div class="dual-slider-handle">
+            <i class="bi bi-arrows-collapse fs-5"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Design Process Timeline -->
+    <section class="py-5" id="process">
+      <div class="container py-lg-5">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5 reveal-fade-up">
+            <span class="eyebrow">OUR METHODOLOGY</span>
+            <h2 class="display-2 font-heading mb-4">A Structured Journey to Architectural Excellence</h2>
+            <p class="text-muted mb-4">
+              We guide every project through five meticulous stages, ensuring total transparency, design integrity, and flawless handover.
+            </p>
+            <a href="contact.html" class="btn btn-editorial btn-primary-custom">
+              Book a Process Walkthrough
+            </a>
+          </div>
+
+          <div class="col-lg-7 reveal-fade-up">
+            <div class="ps-lg-4">
+              <div class="process-step">
+                <div class="process-num-badge">01</div>
+                <h4 class="font-heading">DISCOVER</h4>
+                <p class="text-muted small">Deep alignment on client vision, site dynamics, spatial requirements, budget parameters, and lifestyle expectations.</p>
+              </div>
+
+              <div class="process-step">
+                <div class="process-num-badge">02</div>
+                <h4 class="font-heading">DEFINE</h4>
+                <p class="text-muted small">Conceptual floor plans, volumetric studies, zoning analysis, and preliminary architectural direction.</p>
+              </div>
+
+              <div class="process-step">
+                <div class="process-num-badge">03</div>
+                <h4 class="font-heading">DESIGN</h4>
+                <p class="text-muted small">High-definition 3D photorealistic visualizations, custom material palettes, lighting layouts, and interior details.</p>
+              </div>
+
+              <div class="process-step">
+                <div class="process-num-badge">04</div>
+                <h4 class="font-heading">DEVELOP</h4>
+                <p class="text-muted small">Comprehensive structural working drawings, engineering schematics, bill of quantities, and contractor tender documents.</p>
+              </div>
+
+              <div class="process-step">
+                <div class="process-num-badge">05</div>
+                <h4 class="font-heading">DELIVER</h4>
+                <p class="text-muted small">On-site execution, quality control supervision, material quality audits, and final key handover.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Consultation CTA -->
+    <section class="py-5 collaborate-section text-white position-relative overflow-hidden" id="cta">
+      <div class="container py-lg-5 position-relative z-2">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-9 reveal-fade-up">
+            <span class="eyebrow text-accent-light">LET'S COLLABORATE</span>
+            <h2 class="display-2 font-heading text-white mb-4">Have a meaningful space in mind?</h2>
+            <p class="lead text-white-50 mb-5 max-w-700 mx-auto">
+              Whether you are planning a private luxury residence, a commercial landmark, or a comprehensive renovation, our design studio is ready to bring your vision to life.
+            </p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+              <a href="contact.html" class="btn btn-editorial btn-primary-custom">
+                Request Consultation <i class="bi bi-calendar-check ms-2"></i>
+              </a>
+              <a href="https://wa.me/918089944873" target="_blank" class="btn btn-editorial btn-outline-custom text-white border-white">
+                <i class="bi bi-whatsapp me-2"></i> Chat on WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Front Page Google Map Section -->
+    <section class="py-5 bg-surface border-top" id="map-section">
+      <div class="container py-lg-3">
+        <div class="text-center max-w-700 mx-auto mb-4 reveal-fade-up">
+          <span class="eyebrow">VISIT OUR STUDIO</span>
+          <h2 class="display-3 font-heading mb-2">Our Location in Maradu, Kochi</h2>
+          <p class="text-muted small">DOOR NO. X111/458, SUNU PLAZA, NEAR KOTTARAM TEMPLE, MARADU, KOCHI</p>
+        </div>
+        <div class="rounded-2 overflow-hidden shadow-sm border reveal-fade-up" style="height: 380px;">
+          <iframe title="Zayaura Studio Location Map" src="https://maps.google.com/maps?q=9.938630,76.327029&hl=en&z=16&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Quick View Modal -->
+  <div class="modal fade" id="projectQuickViewModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content glass-modal">
+        <div class="modal-header border-0 pb-0">
+          <div>
+            <h4 class="modal-title font-heading mb-1">Project Title</h4>
+            <span class="modal-category text-accent small text-uppercase">Category • Location</span>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="rounded overflow-hidden mb-3">
+            <img src="" alt="Project View" class="modal-img img-fluid w-100 object-fit-cover" style="max-height: 420px;">
+          </div>
+          <p class="modal-desc text-muted mb-0">Project description detail.</p>
+        </div>
+        <div class="modal-footer border-0 pt-0">
+          <a href="project-detail.html" class="btn btn-editorial btn-primary-custom py-2 px-4">View Full Project Details <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WhatsApp Floating Action Button -->
+  <a href="https://wa.me/918089944873" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark text-white border-top border-secondary border-opacity-10">
+    <div class="container py-lg-4">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <img src="images/logos/WhatsApp Image 2026-09-30 at 14.03.06.jpeg" alt="Zayaura Logo" height="36" class="rounded-1">
+            <span class="font-heading fs-4 text-white text-uppercase" style="letter-spacing: 0.15em;">ZAYAURA</span>
+          </div>
+          <p class="text-white-50 small mb-4">
+            Zayaura Developers is an architectural and interior design firm dedicated to creating spatial experiences defined by elegance, material honesty, and precision engineering.
+          </p>
+          <div class="d-flex gap-3">
+            <a href="https://www.instagram.com/zayauradevelopers?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" class="text-white-50 text-decoration-none fs-5" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/people/Zayaura-Developers/61594051868736/?ref=PROFILE_EDIT_xav_ig_profile_page_web#" target="_blank" class="text-white-50 text-decoration-none fs-5" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white-50 text-decoration-none fs-5" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="text-white-50 text-decoration-none fs-5" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5 class="font-heading text-white mb-3" style="font-size: 1.1rem;">Navigation</h5>
+          <ul class="list-unstyled small text-white-50 d-flex flex-column gap-2">
+            <li><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
+            <li><a href="about.html" class="text-white-50 text-decoration-none">About Us</a></li>
+            <li><a href="services.html" class="text-white-50 text-decoration-none">Services</a></li>
+            <li><a href="projects.html" class="text-white-50 text-decoration-none">Projects</a></li>
+            <li><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h5 class="font-heading text-white mb-3" style="font-size: 1.1rem;">Services</h5>
+          <ul class="list-unstyled small text-white-50 d-flex flex-column gap-2">
+            <li><a href="services.html" class="text-white-50 text-decoration-none">Residential Architecture</a></li>
+            <li><a href="services.html" class="text-white-50 text-decoration-none">Luxury Interior Design</a></li>
+            <li><a href="services.html" class="text-white-50 text-decoration-none">Design & Build Execution</a></li>
+            <li><a href="services.html" class="text-white-50 text-decoration-none">Commercial Hubs</a></li>
+            <li><a href="services.html" class="text-white-50 text-decoration-none">Full Home Renovation</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h5 class="font-heading text-white mb-3" style="font-size: 1.1rem;">Studio Contact</h5>
+          <p class="text-white-50 small mb-2"><i class="bi bi-geo-alt text-accent me-2"></i> Door No. X111/458, Sunu Plaza, Near Kottaram Temple, Maradu, Kochi</p>
+          <p class="text-white-50 small mb-2"><i class="bi bi-telephone text-accent me-2"></i> +91 8089944873 / +91 9048888166</p>
+          <p class="text-white-50 small mb-2"><i class="bi bi-envelope text-accent me-2"></i> zayauradevelopers@gmail.com</p>
+          <p class="text-white-50 small mb-0"><i class="bi bi-clock text-accent me-2"></i> Mon - Sat: 9:00 AM - 6:00 PM</p>
+        </div>
+      </div>
+
+      <div class="border-top border-secondary border-opacity-25 mt-5 pt-4 d-flex flex-column flex-md-row justify-content-between text-white-50 small">
+        <p class="mb-0">&copy; 2026 Zayaura Developers. All Rights Reserved.</p>
+        <p class="mb-0">Designed by byteboot</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
